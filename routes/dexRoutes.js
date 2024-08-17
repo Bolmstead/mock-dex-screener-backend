@@ -19,7 +19,7 @@ router.get("/pairs/:chainId/:pairAddresses", async function (req, res, next) {
       console.log("result: ", result.data)
       return res.json(result.data.pairs)
     } else {
-      return  res.json(null)
+      return res.json(null)
     }
   } catch (err){
     return next(err)
