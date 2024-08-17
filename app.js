@@ -11,7 +11,7 @@ const dexRoutes = require("./routes/dexRoutes");
 const morgan = require("morgan");
 const app = express();
 
-// app.use(cors({ origin: "" }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(morgan("tiny"));
 
